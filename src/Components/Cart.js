@@ -1,8 +1,9 @@
-import React, {useState} from 'react'
+import React, {createContext} from 'react'
 import './Cart.css';
-import { Scrollbars } from 'react-custom-scrollbars-2';
-import Items from './Items';
 import { products } from './Products';
+import ContextCart from './ContextCart';
+
+export const CartContext = createContext();
 
 const Cart = () => {
     
