@@ -6,6 +6,7 @@ import ContextCart from './ContextCart';
 export const CartContext = createContext();
 
 const Cart = () => {
+     // const [item, setItem] = useState(products);
     
     const [item, setItem] = useState(products);
     return (
