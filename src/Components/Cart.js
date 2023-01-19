@@ -2,6 +2,7 @@ import React, {createContext} from 'react'
 import './Cart.css';
 import { products } from './Products';
 import ContextCart from './ContextCart';
+import { reducer } from './reducer';
 
 export const CartContext = createContext();
  
