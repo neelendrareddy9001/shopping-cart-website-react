@@ -8,6 +8,27 @@ const ContextCart = () => {
     // const [item, setItem] = useState(products);
 
     const {item} = useContext(CartContext);
+    if(item.legnth === 0) {
+        return (
+            <>
+            <header>
+            <div className='continue-shopping'>
+                <img src="./images/arrow.png" alt="arrow" className='arrow-icon'></img>
+                <h3>Continue Shopping</h3>
+            </div>
+            <div className='cart-icon'>
+                <img src="./images/cart.png" alt="Cart"/>
+                <p>0</p>
+            </div>
+        </header>
+
+        <section className='main-cart-section'>
+            <h1>shopping Cart</h1>
+            <p className='total-items'>you have <span className='total-items-count'>0</span> items</p>
+        </section>
+            </>
+        )
+    }
     return (
         <>
            <header>
