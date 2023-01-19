@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Items = ({description, title, img, price, amount}) => {
+    const {removeItem} = useContext(CartContext);
     return (
         <>
            <div className='items-info'>
