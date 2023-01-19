@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Items = ({description, title, img, price, amount}) => {
+const Items = ({description, title, img, price}) => {
     return (
         <>
            <div className='items-info'>
@@ -20,7 +20,7 @@ const Items = ({description, title, img, price, amount}) => {
                     </div>
 
                     <div className='price'>
-                        <h3>2000rs</h3>
+                        <h3>{price}</h3>
                     </div>
 
                     <div className='remove-item'>
