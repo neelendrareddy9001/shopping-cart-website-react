@@ -7,7 +7,7 @@ import { CartContext } from './Cart';
 const ContextCart = () => {
     // const [item, setItem] = useState(products);
 
-    const {item} = useContext(CartContext);
+    const {item, clearCart} = useContext(CartContext);
     if(item.legnth === 0) {
         return (
             <>
