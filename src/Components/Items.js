@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Items = ({description, title, img, price}) => {
+const Items = ({description, title, img, price, amount}) => {
     return (
         <>
            <div className='items-info'>
