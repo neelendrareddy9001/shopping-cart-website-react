@@ -23,15 +23,23 @@ const Cart = () => {
             payload : id,
         });
     };
-  //Clear the Cart
+    //Clear the Cart
     const clearCart = () => {
         return dispatch({type : "CLEAR_CART"});
+    };
+
+    // increment the item
+    const increment = (id) => {
+        return dispatch ({
+            type : "INCREMENT",
+            payload : id,
+        });
     };
     
      // const [item, setItem] = useState(products);
     return (
         <>
-           <CartContext.Provider value={{...state, removeItem, clearCart}}>
+           <CartContext.Provider value={{...state, removeItem, clearCart, increment}}>
          
            <ContextCart />
         </CartContext.Provider> 
