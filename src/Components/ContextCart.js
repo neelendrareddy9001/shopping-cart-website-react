@@ -60,7 +60,7 @@ const ContextCart = () => {
             </div>
             
             <div className='card-total'>
-                <h3>Card Total : <span>2200rs</span></h3>
+                <h3>Card Total : <span>{item.price}</span></h3>
                 <button>checkout</button>
             </div>
         </section>

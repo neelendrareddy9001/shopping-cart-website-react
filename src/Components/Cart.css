@@ -292,8 +292,10 @@ header {
 }
 
 /* hover effects  */
-.fa-trash-alt {
+.fa-trash {
   color: #ed4848;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .fa-plus:hover {

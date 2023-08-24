@@ -26,7 +26,7 @@ const Items = ({id,description, title, img, price, amount}) => {
                     </div>
 
                     <div className='remove-item'>
-                        <i className='fas fa-trash-alt remove' onClick={() => removeItem(id)}></i>
+                        <i class="fa-solid fa-trash" onClick={() => removeItem(id)}></i>
                     </div>
             </div>
             <hr />
