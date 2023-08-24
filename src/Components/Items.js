@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { CartContext } from './Cart';
 
 const Items = ({id,description, title, img, price, amount}) => {

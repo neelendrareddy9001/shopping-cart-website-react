@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Cart './Components/Cart';
+import Cart from  './Components/Cart';
 
 function App() {
   return (
