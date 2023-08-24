@@ -1,4 +1,4 @@
-import React, {createContext, useReducer} from 'react'
+import React, {createContext, useEffect, useReducer} from 'react'
 import './Cart.css';
 import { products } from './Products';
 import ContextCart from './ContextCart';
@@ -44,6 +44,15 @@ const Cart = () => {
         });
     };
     
+    // we will use the useEffect to update the data
+    useEffect(() => {
+        dispatch({type : "GET_TOTAL"});
+        console.log("Awesome")
+    }, [state.item])
+
+
+
+
      // const [item, setItem] = useState(products);
     return (
         <>

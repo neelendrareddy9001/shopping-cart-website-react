@@ -7,7 +7,7 @@ import { CartContext } from './Cart';
 const ContextCart = () => {
     // const [item, setItem] = useState(products);
 
-    const {item, clearCart} = useContext(CartContext);
+    const {item, clearCart,totalAmount, totalItem} = useContext(CartContext);
     if(item.legnth === 0) {
         return (
             <>
@@ -60,7 +60,7 @@ const ContextCart = () => {
             </div>
             
             <div className='card-total'>
-                <h3>Card Total : <span>{item.price}</span></h3>
+                <h3>Card Total : <span>{totalAmount}</span></h3>
                 <button>checkout</button>
             </div>
         </section>
