@@ -62,6 +62,7 @@ const ContextCart = () => {
             <div className='card-total'>
                 <h3>Card Total : <span>{totalAmount}</span></h3>
                 <button>checkout</button>
+                <button className='clear-cart' style={{backgroundColor: "red", marginLeft: "12px"}} onClick={clearCart}>Clear Cart</button>
             </div>
         </section>
         </>
