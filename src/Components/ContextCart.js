@@ -18,7 +18,7 @@ const ContextCart = () => {
             </div>
             <div className='cart-icon'>
                 <img src="./images/cart.png" alt="Cart"/>
-                <p>0</p>
+                <p></p>
             </div>
         </header>
 
@@ -38,13 +38,13 @@ const ContextCart = () => {
             </div>
             <div className='cart-icon'>
                 <img src="./images/cart.png" alt="Cart"/>
-                <p>7</p>
+                <p>{totalItem}</p>
             </div>
         </header>
 
         <section className='main-cart-section'>
             <h1>shopping Cart</h1>
-            <p className='total-items'>you have <span className='total-items-count'>7</span> items</p>
+            <p className='total-items'>you have <span className='total-items-count'>{totalItem}</span> items</p>
 
             <div className='cart-items'>
                 <div className='cart-items-container'>
@@ -60,7 +60,7 @@ const ContextCart = () => {
             </div>
             
             <div className='card-total'>
-                <h3>Card Total : <span>{totalAmount}</span></h3>
+                <h3>Card Total : {totalAmount}</h3>
                 <button>checkout</button>
                 <button className='clear-cart' style={{backgroundColor: "red", marginLeft: "12px"}} onClick={clearCart}>Clear Cart</button>
             </div>
