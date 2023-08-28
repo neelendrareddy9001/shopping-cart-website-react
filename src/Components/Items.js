@@ -22,11 +22,11 @@ const Items = ({id,description, title, img, price, quantity}) => {
                     </div>
 
                     <div className='price'>
-                        <h3>{price}</h3>
+                        <h3>{price}₹</h3>
                     </div>
 
                     <div className='remove-item'>
-                        <i class="fa-solid fa-trash" onClick={() => removeItem(id)}></i>
+                        <i className="fa-solid fa-trash" onClick={() => removeItem(id)}></i>
                     </div>
             </div>
             <hr />
